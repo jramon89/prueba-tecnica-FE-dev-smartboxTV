@@ -1,0 +1,14 @@
+nav {
+
+  padding: 7px 0 7px 0;
+  z-index: 1;
+  @include transition(0.5s);
+  @include flex-layout(inherit, flex, column, center);
+  background: $template-color;
+  .items-menu-content {
+    font-size: 25px;
+    color: $template-backgroundColor;
+    @include flex-layout(center, flex, column, center);
+  }
+}
+

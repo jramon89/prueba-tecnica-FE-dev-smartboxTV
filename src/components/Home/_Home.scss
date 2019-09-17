@@ -1,0 +1,27 @@
+.serie-details {
+  @include flex-layout(center, flex, row, center);
+
+  .description {
+    text-align: justify;
+    padding: 15px;
+    flex: 1;
+    color: $template-backgroundColor;
+    .title {
+      font-size: 50px;
+      margin: 0 0 10px;
+      text-align: left;
+    }
+  }
+  .video {
+    flex: 2;
+    box-shadow: -3px 3px 5px #000;
+  }
+  video {
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    flex-flow: column;
+  }
+
+}

@@ -1,0 +1,80 @@
+@import "./Footer/Footer";
+@import './Nav/Nav';
+@import './Header/Header';
+
+body {
+    background: $template-backgroundColor;
+    color: $body-color;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.content {
+    position: relative;
+    min-height: 100vh;
+    @include flex-layout(inherit, flex, column, inherit);
+    /*
+    header {
+        background: $template-color;
+        height: 100%;
+        .header-content {
+            @include flex-layout(center, flex, inherit, inherit);
+            height: 100%;
+            margin: 3px 12px 3px 12px;
+            .header-logotype {
+                flex: 1;
+                .header-title {
+                    a {
+                        font-size: 25px;
+                        color: rgba(255, 255, 255, 0.5);
+                        text-decoration: none;
+                    }
+                }
+            }
+            .header-angle-content {
+                color: #fafafa;
+                cursor: pointer;
+                display: none;
+                font-size: 30px;
+                margin: 3px 12px 3px 12px;
+            }
+
+            .header-logotype,
+            .header-user-profile {
+                display: none;
+            }
+        }
+
+        &.hidden {
+            .header-angle-content {
+                display: block;
+            }
+            .header-logotype, .header-user-profile  {
+                visibility: hidden;
+            }
+        }
+    }
+    */
+    section {
+        flex: 1;
+        // margin: 30px 6px;
+        @include flex-layout(inherit, flex, wrap, inherit); //delete if you dont want to aside
+        .category-container {
+            //margin: 0 0 80px 0; //25px; //25px 0px;
+            /*Delete block if you do not want aside*/
+            flex: 1;
+            @media(max-width: 768px) {
+                flex: inherit;
+                width: 100%;
+            }
+            /*End block*/
+            .loading {
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .loading {
+        margin: 40px;
+    }
+}
