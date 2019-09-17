@@ -1,5 +1,5 @@
 {
-  "name": "Series",
+  "name": "series",
   "version": "1.0.0",
   "description": "Top series",
   "main": "index.js",
@@ -71,12 +71,20 @@
     "uglifyjs-webpack-plugin": "^1.2.4",
     "url": "^0.11.0",
     "url-loader": "^0.5.8",
-    "webpack": "^4.3.0",
+    "webpack": "^4.40.2",
     "webpack-clean-plugin": "^0.2.3",
-    "webpack-cli": "^2.0.13",
+    "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.1.1",
     "webpack-merge": "^4.1.2",
     "webpack-node-externals": "^1.6.0",
     "webpack-split-chunks": "^0.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jramon89/prueba-tecnica-FE-dev-smartboxTV.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jramon89/prueba-tecnica-FE-dev-smartboxTV/issues"
+  },
+  "homepage": "https://github.com/jramon89/prueba-tecnica-FE-dev-smartboxTV#readme"
 }
